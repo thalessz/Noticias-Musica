@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
 
+app.set('view engine', 'hbs')
+app.set('views', './views')
+
 app.get('/', (req, res) => {
-    res.send("Olá <b>mundo</b>!");
+    res.render('index')
 });
 app.get('/noticia/:id', (req,res) => {
     let id= req.params.id;
