@@ -22,11 +22,11 @@
     </ul>
   </nav>
 
-  <section id="noticias">
-    {{#each noticia}}
-    <h2>{{titulo}}</h2>
-    <h4>{{autor}}</h4>
-    <p>{{conteudo}}</p>
+  <section id="noticiass">
+    {{#each results}}
+    <h2><a href="/noticia/{{this.id}}">{{this.titulo}}</a></h2>
+    <h4>{{this.autor}}</h4>
+    <p>{{this.conteudo}}</p>
     {{/each}}
   </section>
 
