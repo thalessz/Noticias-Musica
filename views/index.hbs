@@ -23,11 +23,15 @@
   </nav>
 
   <section id="noticias">
-    <!-- As notícias serão carregadas dinamicamente aqui via JavaScript -->
+    {{#each noticia}}
+    <h2>{{titulo}}</h2>
+    <h4>{{autor}}</h4>
+    <p>{{conteudo}}</p>
+    {{/each}}
   </section>
 
   <footer>
-    <p>&copy; 2024 Jornal Online. Todos os direitos reservados.</p>
+    <p>&copy; 2024 The News. Todos os direitos reservados.</p>
   </footer>
 
   <script src="script.js"></script>

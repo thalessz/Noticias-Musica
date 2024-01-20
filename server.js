@@ -23,13 +23,14 @@ app.listen(port, ()=>{
 
 async function main(){
     try{
-    var connection = await mysql.createConnection({
+    let connection = await mysql.createConnection({
         user: 'root', database: 'jornal'
     });
-    }
-
-    let [results, fields]= await connection.query('select * from autor');
-    console.log(results);
+    console.log('Conexão bem sucedida com o banco de dados')
+    let [results, fields] = await connection.query('select * from noticia where 1');
     connection.end();
+    console.log(results);
+
+    }catch(err){console.err}
 }
 main();
