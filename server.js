@@ -6,6 +6,7 @@ const app = express();
 app.set('view engine', 'hbs')
 app.set('views', './views')
 app.set('assets', './assets')
+app.use(express.static(path.join(__dirname, '/public')))
 
 app.get('/', (req, res) => {
     async function get_data(){
@@ -25,7 +26,7 @@ app.get('/', (req, res) => {
 });
 app.get('/noticia/:id', (req,res) => {
     let id= req.params.id;
-    res.send('noticia selecionada:' + id);
+    console.log('noticia selecionada:' + id);
     async function get_data(){
         try{
             const connection = await mysql.createConnection({
@@ -33,7 +34,8 @@ app.get('/noticia/:id', (req,res) => {
             });
             console.log('Conexão bem sucedida com o banco de dados')
             let [results, fields] = await connection.query('select * from noticia where id = '+id);
-            res.render('index', {results});
+            console.log(results)
+            res.render('noticia', {results});
             connection.end();
             }catch(err)
             {console.log(err)}
