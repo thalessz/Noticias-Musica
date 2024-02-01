@@ -13,8 +13,9 @@ Certifique-se de ter o Node.js e o MySQL instalados em sua máquina antes de pro
    - [MySQL](https://www.mysql.com/)
 
 2. **Inserir o Banco de Dados:**
-   - Crie um banco de dados MySQL chamado `thenews`.
+   - Crie um banco de dados MySQL chamado `jornal`.
    - Execute o script SQL fornecido em `database.sql` para criar as tabelas necessárias.
+   - Garanta que seu banco de dados não necessite de senha para acesso.
 
 3. **Configurar o Projeto:**
    - Clone este repositório em sua máquina.
@@ -36,5 +37,4 @@ Certifique-se de ter o Node.js e o MySQL instalados em sua máquina antes de pro
 6. **Acessar o Site:**
    - Abra seu navegador e acesse [http://localhost:3000](http://localhost:3000) para visualizar o site.
 
-Agora você está pronto para explorar o The News! Sinta-se à vontade para contribuir, melhorar ou adaptar conforme suas necessidades. Se tiver dúvidas ou sugestões, sinta-se à vontade para entrar em contato. Divirta-se explorando as notícias!
-
+Agora você está pronto para explorar o The News! Sinta-se à vontade para contribuir, melhorar ou adaptar o projeto. 
