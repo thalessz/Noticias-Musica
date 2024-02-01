@@ -1,4 +1,4 @@
-```markdown
+
 # The News - Site de Notícias em Node.js
 
 Bem-vindo ao **The News**, um site de notícias desenvolvido em Node.js e MySQL. Este projeto fornece uma plataforma simples para a publicação e visualização de notícias. Siga os passos abaixo para configurar e executar o projeto em sua máquina.
@@ -37,4 +37,4 @@ Certifique-se de ter o Node.js e o MySQL instalados em sua máquina antes de pro
    - Abra seu navegador e acesse [http://localhost:3000](http://localhost:3000) para visualizar o site.
 
 Agora você está pronto para explorar o The News! Sinta-se à vontade para contribuir, melhorar ou adaptar conforme suas necessidades. Se tiver dúvidas ou sugestões, sinta-se à vontade para entrar em contato. Divirta-se explorando as notícias!
-```
+
