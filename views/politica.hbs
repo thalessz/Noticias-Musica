@@ -1,0 +1,40 @@
+<header class="container">
+  <h1>The News</h1>
+</header>
+<nav id="lista" class="container">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="noticias/politica">Política</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="noticias/economia">Economia</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="noticias/esportes">Esportes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="noticias/cultura">Cultura</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="noticias/tecnologia">Tecnologia</a>
+    </li>
+    <li class="nav-item">
+      <button class="btn btn-primary"><a href="/login"></a>Entre-Já
+  </nav>
+<main>
+    {{#each results}}
+  <section id="noticiass">
+    <h2><a href="noticias/noticia/{{this.id}}">{{this.titulo}}</a></h2>
+    <br>
+    <h6>{{this.user_name}} em {{this.publicado}}</h6>
+    <br>
+    <p>{{this.conteudo}}</p>
+    <br>
+    {{/each}}
+  </section>
+</main>
+  <footer>
+    <p>&copy; 2024 The News. Todos os direitos reservados.</p>
+  </footer>
+
+
