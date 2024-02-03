@@ -4,27 +4,28 @@
 <nav id="lista" class="container">
   <ul class="nav nav-pills">
     <li class="nav-item">
-      <a class="nav-link" href="/noticias/politica">Política</a>
+      <a class="nav-link" href="/politica">Política</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/noticias/economia">Economia</a>
+      <a class="nav-link" href="/economia">Economia</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/noticias/esportes">Esportes</a>
+      <a class="nav-link" href="/esportes">Esportes</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/noticias/cultura">Cultura</a>
+      <a class="nav-link" href="/cultura">Cultura</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/noticias/tecnologia">Tecnologia</a>
+      <a class="nav-link" href="/tecnologia">Tecnologia</a>
     </li>
     <li class="nav-item">
-      <button class="btn btn-primary"><a href="/login"></a>Entre-Já
+      <button class="btn btn-primary"><a href="/login">Entre-Já</a></button>
   </nav>
 <main>
+    {{error}}
     {{#each results}}
   <section id="noticiass">
-    <h2><a href="noticias/noticia/{{this.id}}">{{this.titulo}}</a></h2>
+    <h2><a href="/noticias/noticia/{{this.id}}">{{this.titulo}}</a></h2>
     <br>
     <h6>{{this.user_name}} em {{this.publicado}}</h6>
     <br>
